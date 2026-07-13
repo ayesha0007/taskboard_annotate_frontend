@@ -158,3 +158,10 @@ cp .env.example .env
 python manage.py migrate
 python manage.py runserver
 ```
+## Screenshots
+
+**Task Board**
+![Task board](docs/screenshots/screenshot-taskboard.png)
+
+**Annotation Tool**
+![Annotation tool](docs/screenshots/screenshot-annotate.png)
