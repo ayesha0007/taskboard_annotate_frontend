@@ -2,7 +2,9 @@ import axios, { AxiosError, InternalAxiosRequestConfig } from "axios";
 
 import { tokenStorage } from "./auth";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://127.0.0.1:8000/api/v1";
+// const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://127.0.0.1:8000/api/v1";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
