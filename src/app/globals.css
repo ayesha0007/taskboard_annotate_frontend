@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 248 249 251;
+  --panel: 255 255 255;
+  --border: 228 231 237;
+  --muted: 107 114 128;
+  --ink: 17 20 26;
+  --accent: 79 124 235;
+  --accent-soft: 226 234 255;
+  --todo: 107 114 128;
+  --progress: 202 120 12;
+  --done: 5 150 105;
+  --danger: 220 38 38;
+}
+
+.dark {
+  --surface: 12 14 18;
+  --panel: 22 25 32;
+  --border: 40 45 56;
+  --muted: 148 153 166;
+  --ink: 235 237 242;
+  --accent: 99 148 246;
+  --accent-soft: 30 42 66;
+  --todo: 148 153 166;
+  --progress: 245 166 35;
+  --done: 57 196 143;
+  --danger: 239 91 91;
+}
+
+html,
+body {
+  background-color: rgb(var(--surface));
+  color: rgb(var(--ink));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--border));
+  border-radius: 999px;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--accent));
+  outline-offset: 2px;
+}
